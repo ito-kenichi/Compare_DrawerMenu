@@ -133,4 +133,9 @@
       <Name>xamarin.forms_project</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\xamarin.forms_project.Android\Resources\mipmap-xxxhdpi\icon.png">
+      <Link>Resources\icon.png</Link>
+    </BundleResource>
+  </ItemGroup>
 </Project>

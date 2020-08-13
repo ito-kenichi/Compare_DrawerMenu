@@ -10,7 +10,8 @@ namespace xamarin.forms_project
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new MyMasterDetailPage();
         }
 
         protected override void OnStart()

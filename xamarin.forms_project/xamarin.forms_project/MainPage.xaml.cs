@@ -1,15 +1,14 @@
-﻿using Xamarin.Forms;
-using xamarin.forms_project.Pages;
+﻿using System;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
 namespace xamarin.forms_project
 {
-    public partial class MainPage : MasterDetailPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-
-            this.Detail = new NavigationPage(new MenuPage());
         }
     }
 }
