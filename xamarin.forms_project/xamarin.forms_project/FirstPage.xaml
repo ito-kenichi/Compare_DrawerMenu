@@ -4,7 +4,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
-    x:Class="xamarin.forms_project.MainPage">
+    x:Class="xamarin.forms_project.FirstPage">
     <StackLayout x:Name="Layout">
+        <Frame BackgroundColor="#01D6F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="16" />
+        </Frame>
+        <Image Source="https://picsum.photos/250?image=11" HeightRequest="500" WidthRequest="500" />
     </StackLayout>
 </ContentPage>

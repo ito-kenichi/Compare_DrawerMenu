@@ -3,14 +3,14 @@
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:xamarin.forms_project;assembly=xamarin.forms_project"
                   x:Class="xamarin.forms_project.MyMasterDetailPage">
-  <MasterDetailPage.Master>
-    <local:MyMasterPage x:Name="masterPage" />
-  </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        <local:MainPage />
-      </x:Arguments>
-    </NavigationPage>
-  </MasterDetailPage.Detail>
+    <MasterDetailPage.Master>
+        <local:MyMasterPage x:Name="masterPage" />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:FirstPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
 </MasterDetailPage>

@@ -14,13 +14,13 @@ namespace xamarin.forms_project
             {
                 Title = "１枚目",
                 IconSource = "icon.png",
-                TargetType = typeof(MainPage)
+                TargetType = typeof(FirstPage)
             });
             myMasterPageItems.Add(new MyMasterPageItem
             {
                 Title = "２枚目",
                 IconSource = "icon.png",
-                TargetType = typeof(MainPage)
+                TargetType = typeof(SecondPage)
             });
             listView.ItemsSource = myMasterPageItems;
         }

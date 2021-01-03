@@ -1,9 +1,7 @@
-// React Native Navigation Drawer – Example using Latest Navigation Version //
-// https://aboutreact.com/react-native-navigation-drawer //
 import 'react-native-gesture-handler';
 
 import * as React from 'react';
-import { Button, View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, TouchableOpacity, Image } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -11,7 +9,6 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import FirstPage from './pages/Screen1';
 import SecondPage from './pages/Screen2';
-import ThirdPage from './pages/Screen3';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -65,7 +62,7 @@ function secondScreenStack({ navigation }) {
       screenOptions={{
         headerLeft: ()=> <NavigationDrawerStructure navigationProps={navigation} />,
         headerStyle: {
-          backgroundColor: '#f4511e', //Set Header color
+          backgroundColor: '#0460fe', //Set Header color
         },
         headerTintColor: '#fff', //Set Header text color
         headerTitleStyle: {
@@ -78,12 +75,6 @@ function secondScreenStack({ navigation }) {
         options={{
           title: 'Second Page', //Set Header Title
           
-        }}/>
-      <Stack.Screen
-        name="ThirdPage"
-        component={ThirdPage}
-        options={{
-          title: 'Third Page', //Set Header Title
         }}/>
     </Stack.Navigator>
   );

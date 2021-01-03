@@ -5,16 +5,16 @@
              Padding="0,40,0,0"
              Icon="hanburger.png"
              Title="メニュー">
-  <StackLayout VerticalOptions="FillAndExpand">
-    <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
-    </Frame>
-    <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
-  </StackLayout>
+    <StackLayout VerticalOptions="FillAndExpand">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Menu" HorizontalTextAlignment="Center" TextColor="White" FontSize="16" />
+        </Frame>
+        <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

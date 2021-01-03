@@ -21,22 +21,7 @@ const FirstPage = ({ navigation }) => {
             }}>
             This is the First Page under First Page Option
           </Text>
-          <Button
-            onPress={() => navigation.navigate('SecondPage')}
-            title="Go to Second Page"
-          />
-          <Button
-            onPress={() => navigation.navigate('ThirdPage')}
-            title="Go to Third Page"
-          />
         </View>
-        <Text style={{ fontSize: 18, textAlign: 'center', color: 'grey' }}>
-          React Navigate Drawer
-        </Text>
-        <Text
-          style={{ fontSize: 16, textAlign: 'center', color: 'grey' }}>
-          www.aboutreact.com
-        </Text>
       </View>
     </SafeAreaView>
   );
